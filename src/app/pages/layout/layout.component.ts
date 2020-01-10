@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
-
+  visibleSidebar = true;
   constructor() { }
 
   ngOnInit() {
   }
 
+  test() {
+  }
 }
