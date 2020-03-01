@@ -1,12 +1,4 @@
-<app-topbar></app-topbar>
-<div class="ui-g-12">
-  <div class="ui-g-3 ui-sidebar ui-sidebar-left ui-sidebar-active">
-
-  </div>
-
-</div>
+<app-topbar (isShow)="visibleSidebar($event)"></app-topbar>
+<app-sidebar [showBar]="isVisible"></app-sidebar>
 
 
-<!-- <div class="ui-content">
-  <p-sidebar [(visible)]="visibleSidebar" position="left" [style]="{width:'20em'}"  [fullScreen]="false"></p-sidebar>
-</div> -->

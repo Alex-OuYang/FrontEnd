@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.css']
 })
 export class LayoutComponent implements OnInit {
-  visibleSidebar = true;
+  isVisible: boolean;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  visibleSidebar(visible: boolean) {
+    this.isVisible = visible;
   }
 
-  test() {
-  }
 }
